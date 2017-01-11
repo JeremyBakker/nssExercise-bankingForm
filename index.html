@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<form action="demo_form.asp" method="get">
+	  <fieldset>
+	  	<legend>Loan Application</legend>
+		<!-- Applicant Contact Information Form -->
+		<fieldset>
+			<legend>Applicant Name and Address</legend>
+			First name: <input type="text" name="fname">
+			Middle initial: <input type="text" name="minitial">
+			Last name: <input type="text" name="lname"><br>
+			Street: <input type="text" name="appstreet">
+			City: <input type="text" name="appcity">
+			State: <input type="text" name="appstate">
+			Zip Code: <input type="text" name="appzip">
+		</fieldset>	
+	  	<!-- Applicant Employment Information Field -->
+	  	<fieldset>
+	  		<legend>Applicant Employment Information</legend>
+			Employer: <input type="text" name="employer">
+			Title: <input type="text" name ="title">
+			Time in Current Position: <input type="text" name"length">
+	  	</fieldset>
+	  	<!-- Employer Contact Information -->
+  		<fieldset>
+	  	    <legend>Employer Contact Information</legend>
+	  	    Street: <input type="text" name="empstreet">
+			City: <input type="text" name="empcity">
+			State: <input type="text" name="empstate">
+			Zip Code: <input type="text" name="empzip">
+  		</fieldset>
+	  	<!-- Loan Information Field -->
+	  	<fieldset>
+	  		<legend>Loan Information</legend>
+			<label for="loanType">Loan Type:</label>
+			<select id="loanType" name="loanType">
+			    <option value="commerical">Commercial</option>
+			    <option value="realEstate">Real Estate</option>
+			    <option value="personal">Personal</option>
+			  	<option value="mortgage">Mortgage</option>
+			</select><br>
+			Loan Amount: <input type="text" name="loanAmount">
+			<legend>Loan Length:</legend>
+			<input type="radio" name="loanLength" value="years5"> 5 years
+			<input type="radio" name="loanLength" value="years15"> 15 years
+			<input type="radio" name="loanLength" value="years30"> 30 years<br>
+			<label for="specialConditions">Special Conditions:</label><br>
+			<input type="checkbox" value="downPayment"> I have a down payment<br>
+			<input type="checkbox" value="outOfState"> Out-of-state resident<br>
+			<input type="checkbox" value="married"> Married<br>
+			<input type="checkbox" value="coSign"> Loan will be cosigned<br>
+	  	</fieldset>
+		<!-- Comment Area -->
+		<label>Comments:</label><br>
+		<textarea rows="4" cols="50">
+		</textarea>
+		<fieldset>
+			<legend>Applicant Contact Information</legend>
+			<label for="email">Email Address:</label>
+			<input id="email" type="email">
+			<label for="phone">Phone Number:</label>
+			<input id="phone" type="phone">
+			LinkedIn: <input type="text" name="linkedIn">
+		</fieldset>
+	  </fieldset>
+	  <input type="submit" value="Submit">
+	</form>
+</body>
+</html>
